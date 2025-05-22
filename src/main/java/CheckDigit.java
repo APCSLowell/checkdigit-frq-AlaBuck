@@ -12,15 +12,15 @@ public class CheckDigit
      for(int i=0; i<=getNumberOfDigits(num); i++){
        premoddeddigit+=(8-i)*getDigit(num, i);
      }
-     return premoddeddigit%10
+     return premoddeddigit%10;
    }
  
-  /** Returns true if numWithCheckDigit is valid, or false    
-   *  otherwise, as described in part (b). 
-   *  Precondition: The number of digits in numWithCheckDigit   
-   *  is between two and seven, inclusive.
-   *                numWithCheckDigit >= 0     
-   */     
+  /* Returns true if numWithCheckDigit is valid, or false    
+     otherwise, as described in part (b). 
+     Precondition: The number of digits in numWithCheckDigit   
+     is between two and seven, inclusive.
+                  numWithCheckDigit >= 0     
+  */     
    public static boolean isValid(int numWithCheckDigit)    
    {      
       int check = numWithCheckDigit % 10;
